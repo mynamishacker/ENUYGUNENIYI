@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EN UYGUN EN İYİ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffcfa3;
+        }
+        header {
+            background-color: #ffcfa3;
+            color: black;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffe3c9;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "aside main"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffe3c9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .aside {
+            grid-area: aside;
+            padding: 15px;
+            background-color: #fff4ea;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .main {
+            grid-area: main;
+            padding: 15px;
+            background-color: #fff4ea;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .main article {
+            margin-bottom: 20px;
+        }
+        .main figure {
+            margin: 0;
+            text-align: center;
+        }
+        .main img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            grid-area: footer;
+            text-align: center;
+            padding: 10px;
+            background-color: #ffe3c9;
+            color: black;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .title {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .list-item:last-child {
+            border-bottom: none;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        .price {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EN UYGUN EN İYİ </h1>
+        <nav>
+            <a href="Anasayfa.html">Ana Sayfa</a>
+            <a href="Hakkımızda.html">Hakkımızda</a>
+            <a href="İletişim.html">İletişim</a>
+            <a href="Üyeol.html">Üye Ol</a>
+            <a href="Girişyap.html">Giriş Yap</a>
+            <a href="Lokasyonlar.html">Lokasyonlar</a>
+            <a href="Yardım.html">Yardım</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="aside">
+            <h2>Göz At</h2>
+            <h4><ul>
+                <li><a href="Uçak.html">Uçak</a></li>
+                <li><a href="Otobüs.html">Otobüs</a></li>
+                <li><a href="Otel.html">Otel</a></li>
+                <li><a href="Araç.html">Araç</a></li>
+                <li><a href="Kampanyalar.html">Kampanyalar</a></li>
+                <li><a href="Yorumlar.html">Yorumlar</a></li>
+                <li><a href="Sıkçasorulansorular.html">Sıkça Sorulan Sorular</a></li>
+                <li><a href="Şikayet.html">Şikayet Et</a></li>
+            </ul></h4>
+        </aside>
+        <main class="main">
+            <article>
+                <figure>
+                    <img src="resimler/otobus4.jpg" width="1000" height="350">    
+                </figure>
+            </article>
+                <div class="title">En Ucuz İzmir Otobüs Biletleri</div>
+                <ul class="list">
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Aydın - İzmir </div>
+                        <span> 04 Ocak 2025 </span>
+                        <span class="price"> 300 TL </span>
+                    </li>
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Balıkesir - İzmir </div>
+                        <span> 04 Ocak 2025 </span>
+                        <span class="price"> 400 TL </span>
+                    </li>
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Denizli - İzmir </div>
+                        <span> 04 Ocak 2025 </span>
+                        <span class="price"> 500 TL </span>
+                    </li>
+                        <div class="title">En Ucuz İstanbul Otobüs Biletleri</div>
+                        <ul class="list">
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Uşak - İstanbul </div>
+                        <span> 05 Ocak 2025 </span>
+                        <span class="price"> 1000 TL </span>
+                    </li>
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Bursa - İstanbul </div>
+                        <span> 05 Ocak 2025 </span>
+                        <span class="price"> 400 TL </span>
+                    </li>
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Muğla - İstanbul </div>
+                        <span> 05 Ocak 2025 </span>
+                        <span class="price"> 1500 TL </span>
+                    </li>
+                        <div class="title">En Ucuz Ankara Otobüs Biletleri</div>
+                        <ul class="list">
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Kahramanmaraş - Ankara </div>
+                        <span> 06 Ocak 2025 </span>
+                        <span class="price"> 1500 TL </span>
+                    </li>
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Antalya - Ankara </div>
+                        <span> 06 Ocak 2025 </span>
+                        <span class="price"> 800 TL </span>
+                    </li>
+                    <li class="list-item">
+                        <div><span class="icon">🚌</span> Iğdır - Ankara </div>
+                        <span> 06 Ocak 2025 </span>
+                        <span class="price"> 2000 TL </span>
+                    </li>
+                </ul>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 EN UYGUN EN İYİ Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

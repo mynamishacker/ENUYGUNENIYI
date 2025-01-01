@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EN UYGUN EN İYİ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffcfa3;
+        }
+        header {
+            background-color: #ffcfa3;
+            color: black;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffe3c9;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "aside main"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffe3c9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .aside {
+            grid-area: aside;
+            padding: 15px;
+            background-color: #fff4ea;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .main {
+            grid-area: main;
+            padding: 15px;
+            background-color: #fff4ea;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .main article {
+            margin-bottom: 20px;
+        }
+        .main figure {
+            margin: 0;
+            text-align: center;
+        }
+        .main img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            grid-area: footer;
+            text-align: center;
+            padding: 10px;
+            background-color: #ffe3c9;
+            color: black;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .card {
+      display: flex;
+      background: white;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 10px;
+    }
+    .card-header {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .location {
+      color: #555;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .rating {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .button {
+      padding: 8px 12px;
+      background-color: #2a9d8f;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EN UYGUN EN İYİ </h1>
+        <nav>
+            <a href="Anasayfa.html">Ana Sayfa</a>
+            <a href="Hakkımızda.html">Hakkımızda</a>
+            <a href="İletişim.html">İletişim</a>
+            <a href="Üyeol.html">Üye Ol</a>
+            <a href="Girişyap.html">Giriş Yap</a>
+            <a href="Lokasyonlar.html">Lokasyonlar</a>
+            <a href="Yardım.html">Yardım</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="aside">
+            <h2>Göz At</h2>
+            <h4><ul>
+                <li><a href="Uçak.html">Uçak</a></li>
+                <li><a href="Otobüs.html">Otobüs</a></li>
+                <li><a href="Otel.html">Otel</a></li>
+                <li><a href="Araç.html">Araç</a></li>
+                <li><a href="Kampanyalar.html">Kampanyalar</a></li>
+                <li><a href="Yorumlar.html">Yorumlar</a></li>
+                <li><a href="Sıkçasorulansorular.html">Sıkça Sorulan Sorular</a></li>
+                <li><a href="Şikayet.html">Şikayet Et</a></li>
+            </ul></h4>
+        </aside>
+        <main class="main">
+            <article>                
+                <figure>
+                    <img src="resimler/otel.jpg" width="1000" height="350">                    
+                </figure>
+            </article>
+            <div class="card">
+                <img src="resimler/izmirotel.jpg" alt="Hotel">
+                <div class="card-content">
+                  <div>
+                    <div class="card-header">Ibis Izmir Alsancak</div>
+                    <div class="location">Alsancak, Konak, İzmir</div>
+                    <div class="description">İbis İzmir, İzmir'in kalbi Alsancak'ta modern olanaklarla donatılmış odalarıyla hizmet veriyor.</div>
+                  </div>
+                  <div class="rating">
+                    <span>Harika</span>
+                    <span>8.6</span>
+                  </div>
+                  <a href="#" class="button">Fiyatları Göster</a>
+                </div>
+              </div>          
+              <div class="card">
+                <img src="resimler/antalyaotel.jpg" alt="Hotel">
+                <div class="card-content">
+                  <div>
+                    <div class="card-header">Ramada Encore by Wyndham Izmir</div>
+                    <div class="location">Balçova, İzmir</div>
+                    <div class="description">Ege Bölgesi'nde modern bir konaklama anlayışını sunan bu otel konforlu odalarıyla dikkat çekiyor.</div>
+                  </div>
+                  <div class="rating">
+                    <span>Çok İyi</span>
+                    <span>8.1</span>
+                  </div>
+                  <a href="#" class="button">Fiyatları Göster</a>
+                </div>
+              </div>          
+              <div class="card">
+                <img src="resimler/muğlaotel.jpg" alt="Hotel">
+                <div class="card-content">
+                  <div>
+                    <div class="card-header">Hilton Garden Inn Izmir Bayraklı</div>
+                    <div class="location">Bayraklı, İzmir</div>
+                    <div class="description">İzmir Limanı yakınında yer alan otel, modern ve konforlu konaklama sunuyor.</div>
+                  </div>
+                  <div class="rating">
+                    <span>Harika</span>
+                    <span>8.7</span>
+                  </div>
+                  <a href="#" class="button">Fiyatları Göster</a>
+                </div>
+              </div>          
+              <div class="card">
+                <img src="resimler/bodrumotel.jpg" alt="Hotel">
+                <div class="card-content">
+                  <div>
+                    <div class="card-header">Coordinat Suits</div>
+                    <div class="location">Bornova, İzmir</div>
+                    <div class="description">Bornova'da özel dekore edilmiş odalarıyla aile tatilleri için ideal bir otel seçeneği.</div>
+                  </div>
+                  <div class="rating">
+                    <span>Çok İyi</span>
+                    <span>8.4</span>
+                  </div>
+                  <a href="#" class="button">Fiyatları Göster</a>
+                </div>
+              </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 EN UYGUN EN İYİ Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
